@@ -92,7 +92,7 @@
     }
   },
   "variables": {
-    "nicName": "VMNic",
+    "nicName": "[concat(reference(variables('vmName')), '-nic')]",
     "addressPrefix": "10.0.0.0/16",
     "imagePublisher": "Canonical",
     "imageVersion": "latest",
@@ -101,7 +101,7 @@
     "subnetName": "Subnet-1",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "publicIP",
+    "publicIPAddressName": "[concat(parameters('vmDnsName'), '-publicIP')]",
     "publicIPAddressType": "Dynamic",
     "vmName": "[parameters('vmDnsName')]",
     "virtualNetworkName": "WPVNET",
@@ -117,7 +117,7 @@
         ]
       }
     },
-    "networkSecurityGroupName": "default-NSG",
+    "networkSecurityGroupName": "[concat(reference(variables('vmName')), '-nsg')]",
     "shimspmonitorstorageName": "[concat('shimsp', uniqueString(resourceGroup().id))]",
     "ladMetricsResourceId": "[resourceId('Microsoft.Compute/virtualMachines', variables('vmName'))]"
   },
@@ -588,7 +588,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/wordpress-single-vm-ubuntu/install_wordpress.sh"
+            "https://raw.githubusercontent.com/shidwalden/DeployWordpress/master/install_wordpress.sh"
           ]
         },
         "protectedSettings": {
