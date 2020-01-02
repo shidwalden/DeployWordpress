@@ -9,10 +9,11 @@
 
 This template deploys the following:
 - Virtual Machine with your choice of size (limied to pre-selected ones) with VM Monitoring extentions
+- Full LAMP Stack
 - Public IP
-- Network Security Group with port 80 (HTTP) open
+- Network Security Group with ports 22 (SSH), 80 (HTTP) , and 443 (HTTPS) open
 - a Resource Group of your choice (limited to specif regions)
 - A VNet
-
+- A DNS name using <vmname>.<region>.cloudapp.azure.com
 
 Once the deployment is finished, you need to go to http://fqdn.of.your.vm/wordpress/ to finish the configuration, create an account, and get started with WordPress.

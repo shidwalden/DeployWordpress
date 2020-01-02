@@ -172,6 +172,19 @@
               "sourcePortRange": "*",
               "destinationAddressPrefix": "*"
             }
+          },
+          {
+            "name": "default-allow-443",
+            "properties": {
+              "priority": 1002,
+              "access": "Allow",
+              "direction": "Inbound",
+              "destinationPortRange": "443",
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*"
+            }
           }
         ]
       }
@@ -591,11 +604,22 @@
       "sku": {
         "name": "[parameters('shimspmonitorstorageType')]"
       },
-      "dependsOn": [ ],
+      "dependsOn": [],
       "tags": {
         "displayName": "shimspmonitorstorage"
       },
       "kind": "Storage"
     }
-  ]
+
+  ],
+  "outputs": {
+    "fqdn": {
+      "type": "string",
+      "value": "[reference(variables('publicIPAddressName')).dnsSettings.fqdn]"
+    },
+    "WPurl": {
+      "type": "string",
+      "value": "[concat('http://', reference(variables('publicIPAddressName')).dnsSettings.fqdn,'/wordpress')]"
+    }
+  }
 }
