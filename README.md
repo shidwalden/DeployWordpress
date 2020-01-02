@@ -1,13 +1,4 @@
-# Deploy a single-VM WordPress to Azure
-
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/PublicLastTestDate.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/PublicDeployment.svg" />&nbsp;
-
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/FairfaxLastTestDate.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/FairfaxDeployment.svg" />&nbsp;
-
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/BestPracticeResult.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/wordpress-single-vm-ubuntu/CredScanResult.svg" />&nbsp;
+# Deploy a custom WordPress server to Azure
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fshidwalden%2FDeployWordpress%2Fmaster%2fazuredeploy.json" target="_blank">
     <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
