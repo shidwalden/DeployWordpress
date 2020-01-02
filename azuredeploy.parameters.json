@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmDnsName": {
+      "value": "dbadavewpvm"
+    },
+    "adminUsername": {
+      "value": "dbadave"
+    },
+    "vmSize": {
+      "value": "Standard_B1ms"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "ownerTag": {
+      "value": "dave_walden@shi.com"
+    },
+    "applicationTag": {
+      "value": "Wordpress"
+    },
+    "mySqlPassword": {
+      "value": "P@ssw0rd!"
+    },
+    "adminPasswordOrKey": {
+      "value": "P@ssw0rd!"
+    }
+  }
+}
