@@ -23,14 +23,14 @@
   <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
   <!-- vertag<:>end -->
   <ItemGroup>
-    <Content Include="azuredeploy.parameters.json" />
-    <Content Include="azuredeploy.json" />
+    <Content Include="Resources\azuredeploy.parameters.json" />
+    <Content Include="Resources\azuredeploy.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
-    <Content Include="Deploy-AzureResourceGroup.ps1" />
-    <Content Include="README.md" />
-    <Content Include="install_wordpress.sh" />
+    <Content Include="Resources\Deploy-AzureResourceGroup.ps1" />
+    <Content Include="Resources\README.md" />
+    <Content Include="Resources\install_wordpress.sh" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
