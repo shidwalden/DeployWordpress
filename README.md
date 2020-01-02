@@ -7,7 +7,12 @@
     <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.png"/>
 </a>
 
-This template deploys a complete LAMP stack, then installs and initializes WordPress.
+This template deploys the following:
+- Virtual Machine with your choice of size (limied to pre-selected ones) with VM Monitoring extentions
+- Public IP
+- Network Security Group with port 80 (HTTP) open
+- a Resource Group of your choice (limited to specif regions)
+- A VNet
+
 
 Once the deployment is finished, you need to go to http://fqdn.of.your.vm/wordpress/ to finish the configuration, create an account, and get started with WordPress.
-
